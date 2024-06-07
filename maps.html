@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Projeto escolar</title>
+</head>
+<body>
+    <!-- Header section star -->
+    <header>
+        <a href="index.html" class="logo">Codeis<span>Gui</span></a>
+        <div id="menu-bars" class="fas fa-bars"></div>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+        </nav>
+    </header>
+    <!-- Header section end -->
+
+    <section class="home-mapa background" id="home-mapa">
+        <div class="mapa">
+            <h1>Venha nós conhecer!!!</h1>
+            <p>Nós encontramos no Shopping Tamboré</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.7821950058105!2d-46.836925525490045!3d-23.504353359498744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf017b8c1a5da9%3A0x22a277028d33acc!2sShopping%20Tambor%C3%A9!5e0!3m2!1spt-BR!2sbr!4v1717520433743!5m2!1spt-BR!2sbr" width="900" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    
+        <p>Av. Piracema, 669 - Tamboré, Barueri - SP, 06460-030</p>
+        </section>
+        <!-- Footer section -->
+        <div class="footer background">
+            © Todos os direitos reservado por <span>CodeisGui</span>
+        </div>
+
+        
+    <script>
+        let menu = document.querySelector("#menu-bars");
+        let navbar = document.querySelector(".navbar")
+
+        menu.addEventListener("click", () =>{
+            menu.classList.toggle("fa-times");
+            navbar.classList.toggle("nav-taggle");
+        });
+    
+        window.onscroll = () => {
+            menu.classList.remove("fa-times");
+            navbar.classList.remove("nav-taggle");
+        }
+
+
+
+
+    </script>

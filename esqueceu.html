@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Projeto escolar</title>
+</head>
+<body class="background">
+    <!-- Header section star -->
+    <header>
+        <a href="index.html" class="logo">Codeis<span>Gui</span></a>
+        <div id="menu-bars" class="fas fa-bars"></div>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+
+        </nav>
+    </header>
+<div class="container-index">
+    <div class="container">
+        <div class="form-image">
+            <img src="/imgs/undraw_visionary_technology_re_jfp7.svg"  alt="">
+        </div>
+
+        <div class="form">
+            <form action="#">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Recupere sua Conta!</h1>
+                        <h3>	
+                            Insira seu email ou número de celular para procurar a sua conta.</h3>
+                    </div>
+
+                </div>
+
+                <div class="input-group-login">
+                    <div class="input-box">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
+                    </div>
+
+                </div>
+
+                <div class="continue-button">
+                    <button><a href="#">Continuar</a> </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+    <!-- Footer section -->
+    <div class="footer background">
+        © Todos os direitos reservado por <span>CodeisGui</span>
+    </div>
+
+
+    <script>
+        let menu = document.querySelector("#menu-bars");
+        let navbar = document.querySelector(".navbar")
+
+        menu.addEventListener("click", () =>{
+            menu.classList.toggle("fa-times");
+            navbar.classList.toggle("nav-taggle");
+        });
+    
+        window.onscroll = () => {
+            menu.classList.remove("fa-times");
+            navbar.classList.remove("nav-taggle");
+        }
+
+
+
+
+    </script>
